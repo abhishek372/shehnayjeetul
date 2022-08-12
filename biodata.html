@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Data</title>
+
+    <!-- Title icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./title_icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./title_icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./title_icons/favicon-16x16.png">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="biodata.css" />
+    <link rel="stylesheet" href="./navbar1.css">
+    <link rel="stylesheet" href="./footer.css">
+    
+    <!-- Boxicons cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="mobileview">
+      <i class="ri-close-line">
+      </i>
+      <div id="nav-elements">
+          <a href="index.html">HOME</a>
+          <a href="aboutUs.html">ABOUT US</a> 
+          <a href="membership-plan.html">MEMBERSHIP</a> 
+          <a href="#">LOGIN</a>
+          <a id="mobile-register" href="#">REGISTER</a>
+          <a href="contact.html">CONTACT US</a>
+      </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="index.html"><img src="./Images/shehnayioriginallogo.svg" alt="Shehnayi" title="Shehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="membership-plan.html">Membership</a></li>
+                <li><a id="log" href="#">Login</a></li>
+                <li><p id="reg" class="register-popup">Register</p></li>
+                <li><a href="contact.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop Up-1 Register -->
+    <div class="pop-up">
+        <div class="form-div" id="form-1">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Let's set up your Account, while we find Matches for you!</h4>
+            <form id="account-form" action="">
+                <h6>Profile for</h6>
+                <select class="profile" name="profil-for">
+                    <option value="myself">Myself</option>
+                    <option value="son">Son</option>
+                    <option value="daughter">Daughter</option>
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                </select>
+                <h6>Name</h6>
+                <div id="flex-div">
+                    <input class="name" type="text" placeholder="First Name">
+                    <input class="name" type="text" placeholder="Last Name">
+                </div>
+                <h6>Religion</h6>
+                <select class="profile" name="profil-for">
+                    <option value="" disabled>Select</option>
+                    <option value=""></option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn">
+                    <button id="submit-btn">Next</button>
+                </div>
+                <h5>Already a Member?<a id="login" href="#">Login</a></h5>
+            </form>
+        </div>
+        <div class="form-div" id="form-2" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Great! Now some basic <br> details about you</h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                <div id="top">
+                    <h6>Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                </div>
+                <div id="bottom">
+                    <h6>Alternate Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                </div>
+                </div>
+                <h6>Date of Birth</h6>
+                <input class="name" id="a" type="text" placeholder="MM/DD/YY">
+                <h6>Living in (Currently)</h6>
+                <input class="name" id="a" type="text" placeholder="Type">
+                <div id="btn-flex">
+                <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-3">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Thanks for Registering! <br> Now let's build your profile</h4>
+            <form id="account-form" action="">
+                <h6>Home Town</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">City</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <select name="City" class="town">
+                        <option value="">State</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Sub Community</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Height</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Weight</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Skin Tone</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-3-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-4">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Please add Education & <br> Career details</h4>
+            <form id="account-form" action="">
+            <h6>Highest Qualification</h6>
+            <select class="profile" name="profil-for">
+                <option value="">Select</option>
+            </select>
+            <h6>College</h6>
+            <input class="name" type="text" placeholder="Type">
+            <div id="flex-div">
+                <div id="top">
+                    <h6>Currently work at</h6>
+                    <input class="name" type="text" placeholder="Type">
+                </div>
+                <div id="bottom">
+                    <h6>Designation</h6>
+                    <input class="name" type="text" placeholder="Type">
+                </div>
+            </div>
+            <h6>Annual Income</h6>
+            <input class="name" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-4-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-3">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-5">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Food & Lifestyle</h4>
+            <form id="account-form" action="">
+            <h6>Eating Habit</h6>
+            <select class="profile" name="profil-for">
+                <option value="">Select</option>
+            </select>
+            <h6>Drinking Habit</h6>
+            <select class="profile" name="profil-for">
+                <option value="">Select</option>
+            </select>
+            <h6>Smoking Habit</h6>
+            <select class="profile" name="profil-for">
+                <option value="">Select</option>
+            </select>
+                <div id="btn-flex">
+                    <a id="form-5-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-4">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-6">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Some details about the <br> family</h4>
+            <form id="account-form" action="">
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Father's Status</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Mother's Status</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Brothers:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Married</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Unmarried</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Sisters:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Married</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Unmarried</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Family Affluence</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-6-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-5">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-7">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Partner's Basic <br> Information</h4>
+            <form id="account-form" action="">
+                <h6>Age</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <h6>to</h6>
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Diet</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Height</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Manglik</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-7-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-6">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-8">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Priority</h4>
+            <form id="account-form" action="">
+                <h6>City</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>State</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Country</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-8-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-7">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-9">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Education & Career</h4>
+            <form id="account-form" action="">
+                <h6>Qualification</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Education</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Annual Income</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-9-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-8">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-10">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>About Yourself</h4>
+            <form id="account-form" action="">
+                <h6>Write about yourself</h6>
+                <textarea id="w3review" name="w3review" rows="4" cols="30" placeholder="write something..."></textarea>
+                <button class="file-upload" onclick="document.getElementById('getFile').click()">Upload photo</button>
+                <input type='file' id="getFile" style="display:none">
+                <div id="btn-flex">
+                    <a id="form-10-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-9"><a href="dashboard.html">Submit</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <h6 class="forgot-password"><a href="#" id="forgot">Forgot Password?</a></h6>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+        <div class="form-div" id="forgot-pass-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Reset Password<h4>
+            <form id="reset-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>New Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <h6>Confirm Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn" type="reset"><a href="#">Reset</a></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login-pop-up -->
+    <div class="login-pop-up">
+        <div class="form-div" id="login_form">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login</h4>
+            <form class="login-form-outer" id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <h6 class="forgot-password-btn"><a href="#" id="forgot">Forgot Password?</a></h6>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+    </div>
+
+    <!-- Forgot-password-popup -->
+    <div class="forgot-pop-up">
+        <div class="form-div" id="forgot_password_form">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Reset Password</h4>
+            <form id="reset-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <h6>Confirm Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn" type="reset"><a href="#">Reset</a></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="bio-data-container">
+      <img src="img/top.svg" alt="" class="top-image" />
+
+      <div class="outter-div">
+        <div>
+          <!-- SECTION 1 -->
+          <section class="sec1">
+            <h1 class="form-heading">BIODATA</h1>
+            <h3 class="minor-heading">BASIC INFORMATION</h3>
+
+            <!-- top corner images -->
+            <img
+              src="img/sec1-top-left-corner.svg"
+              alt=""
+              class="sec1-top-left-corner"
+            />
+            <img
+              src="img/sec1-top-right-corner.svg"
+              alt=""
+              class="sec1-top-right-corner"
+            />
+
+            <div class="sec1-rec-div">
+              <img
+                src="./img/user-img.webp"
+                alt=""
+                class="sec1-rectangle-img"
+              />
+
+              <!-- rectangel corner images -->
+              <img
+                src="img/sec1-rec-left-corner.svg"
+                alt=""
+                class="sec1-rec-left-corner"
+              />
+              <img
+                src="img/sec1-rec-right-corner.svg"
+                alt=""
+                class="sec1-rec-right-corner"
+              />
+            </div>
+          </section>
+
+          <!-- SECTION 2 -->
+          <section class="sec2">
+            <form action="">
+              <div class="sec2-div">
+                <label for="" class="label">Name</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec2-div">
+                <label for="" class="label">Date of birth</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec2-div">
+                <label for="" class="label">Time & place of birth</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec2-div">
+                <label for="" class="label">Height</label>
+                <input type="number" class="input" />
+              </div>
+
+              <div class="sec2-div">
+                <label for="" class="label">Weight</label>
+                <input type="text" class="input" />
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 3 -->
+          <section class="sec3">
+            <form action="">
+              <div class="sec3-div">
+                <label for="" class="label">Complexion</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec3-div">
+                <label for="" class="label">Contact No.</label>
+                <input type="number" class="input" />
+              </div>
+
+              <div class="sec3-div">
+                <label for="" class="label">Religion</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec3-div">
+                <label for="" class="label">Raashi</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec3-div">
+                <label for="" class="label">Manglik Status</label>
+                <input type="text" class="input" />
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 4 -->
+          <section class="sec4">
+            <h3 class="minor-heading">EDUCATION AND OCCUPATION DETAILS</h3>
+            <form action="">
+              <div class="sec4-div">
+                <label for="" class="label">Qualification</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec4-div">
+                <label for="" class="label">Profession.</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec4-div">
+                <label for="" class="label">Company</label>
+                <input type="text" class="input" />
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 5 -->
+          <section class="sec5">
+            <h3 class="minor-heading">FAMILY DETAILS</h3>
+            <form action="">
+              <div class="sec5-div">
+                <label for="" class="label">Father's Name</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec5-div">
+                <label for="" class="label">Father's Profession.</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec5-div">
+                <label for="" class="label">Firm's Name</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec5-div">
+                <label for="" class="label">Firm's Address</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec5-div">
+                <label for="" class="label">Mother's Name</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="sec5-div">
+                <label for="" class="label">Mother's Profession</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="bro-sis-div">
+                <div class="sec5-div">
+                  <label for="" class="label">No. of Brothers</label>
+                  <input type="number" class="sec5-input" />
+                </div>
+
+                <div>
+                  <label for="" class="label">Married</label>
+                  <input type="number" class="input small-input" />
+                </div>
+              </div>
+
+              <div class="bro-sis-div">
+                <div class="sec5-div">
+                  <label for="" class="label">No. of Sisters</label>
+                  <input type="text" class="sec5-input" />
+                </div>
+
+                <div>
+                  <label for="" class="label">Married</label>
+                  <input type="text" class="input small-input" />
+                </div>
+              </div>
+
+              <div class="diff-div">
+                <label for="" class="label">Residence Address</label>
+                <div class="col-div">
+                  <input type="text" class="input big-input" />
+                  <input type="text" class="input big-input" />
+                </div>
+              </div>
+
+              <div class="btn-div">
+                <button class="download-btn">
+                  <a href="#" class="btn-link">Download</a>
+                </button>
+                <button class="download-btn">
+                  <a href="#" class="btn-link share-btn">Share</a>
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 6 -->
+          <section class="sec6">
+            <div class="sec6-mid-img-div">
+              <img src="img/sec6-mid-img.svg" alt="" class="sec6-mid-img" />
+              <img
+                src="img/sec6-mid-img.svg"
+                alt=""
+                class="sec6-mid-img sec6-mid-img2"
+              />
+            </div>
+            <img src="img/shehniya-logo.svg" alt="" class="bottom-logo" />
+
+            <!-- Absolutely positioned image-->
+            <img
+              src="img/sec6-bottom-left-corner.svg"
+              alt=""
+              class="sec6-abs-left-img"
+            />
+            <img
+              src="img/sec6-bottom-right-corner.svg"
+              alt=""
+              class="sec6-abs-right-img"
+            />
+          </section>
+        </div>
+      </div>
+
+      <img src="img/bottom.svg" alt="" class="bottom-image" />
+    </div>
+
+    
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="logo-img">
+          <img src="./Images/shehnayilogowhite.svg" alt="Shehnayi-logo" title="Shehnayi">
+        </div>
+        <div class="footer-links">
+            <div class="foot-links-div">
+                <h4 class="links-title">Need Help?</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Partner Search</a></li>
+                    <li><a href="faq.html">How to use</a></li>
+                    <li><a href="membership-plan.html">Premium membership</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Company</h4>
+                <ul class="foot-links">
+                    <li><a href="aboutUs.html">About US</a></li>
+                    <li><a href="blogs.html">Shaadi Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Privacy & You</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Be Safe Online</a></li>
+                    <li><a href="#">Reports Misuse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+          <h4 class="social-title">Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icons-link"><img src="./Icons/footer-fb-icon.svg" alt=""></a>
+            <a href="#" class="social-icons-link"><img src="./Icons/footer-twitter-icon.svg" alt=""></a>
+            <a href="#" class="social-icons-link"><img src="./Icons/footer-insta-icon.svg" alt=""></a>
+            <a href="#" class="social-icons-link"><img src="./Icons/footer-linkedin-icon.svg" alt=""></a>
+        </div>
+        </div>
+        <div class="footer-end">
+          <h4 class="terms-condtns">Terms and Conditions</h4>
+          <h4 class="privacy-policy">Privacy Policy</h4>
+          <h4 class="contact-us">Contact Us</h4>
+        </div>
+      </div>
+  
+      <!-- Script -->
+      <script src="./aboutUs.js"></script>
+
+</body>
+</html>

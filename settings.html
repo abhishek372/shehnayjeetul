@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <!-- Title icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./title_icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./title_icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./title_icons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+   
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="./my_matches2.css">
+
+    <!-- Boxicons cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>  
+
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="#">MATCHES</a> 
+            <a href="./activity.html">ACTIVITY</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="./user_page.html">PROFILE</a>
+            <a href="#" id="" title="Inbox"><i class='bx bxs-inbox'></i></a>
+            <a href="#" id="" title="Notifications"><i class='bx bxs-bell'></i></a>
+            <a href="#" id="" title="Search"><i class='bx bx-search'></i></a>
+            <a href="./settings.html" title="Settings"><i class='bx bxs-cog' ></i></a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="index.html"><img src="./Images/shehnayioriginallogo.svg" alt="Shehnayi" title="Shehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="#" id="matches">Matches</a></li>
+                <li><a href="./activity.html">Activity</a></li>
+                <li><a href="./membership-plan.html">Membership</a></li>
+                <li><a href="user_page.html" >Profile</a></li>
+                <li class="icons-item"><a href="#" id="inbox" title="Inbox"><i class='bx bxs-inbox'></i></a></li>
+                <li class="icons-item"><a href="#" id="notif" title="Notifications"><i class='bx bxs-bell'></i></a></li>
+                <li class="icons-item"><a href="#" id="search1" title="Search"><i class='bx bx-search'></i></a></li>
+                <li class="icons-item"><a href="./settings.html" title="Settings"><i class='bx bxs-cog' ></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Matches popup -->
+    <div id="matches-popup">
+        <i id="close-not" class="ri-close-line"></i>
+        <div class="nots">
+            <p><a href="./all_matches.html">All matches</a></p>
+        </div>
+        <div class="nots">
+            <p><a href="./all_profiles.html">All profiles</a></p>
+        </div>
+    </div>
+
+    <!-- Notification popup -->
+    <div id="not-popup" >
+        <i id="close-not" class="ri-close-line"></i>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="nots">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!-- Search popup -->
+    <div id="nav-srch">
+        <div class="form-div">
+            <i id="close-icon" class="ri-close-line"></i>
+            <div id="heading">
+                <i class="ri-search-line"></i>
+                <h2>Quick Search</h2>
+            </div>
+            <hr>
+            <form action="" id="search-form">
+                <h4>Age:</h4>
+                <div class="input-flex"> 
+                    <select name="" id="">
+                        <option value="">18 Year</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    <p>To:</p>
+                    <select name="" id="">
+                        <option value="">18 Year</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <h4>Height:</h4>
+                <div class="input-flex"> 
+                    <input type="text" name="" id="" placeholder="Height">
+                </div>
+                <h4>Country:</h4>
+                <select name="" id="">
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="UAE">UAE</option>
+                </select>
+                <h4>State:</h4>
+                <select name="" id="">
+                    <option value="">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                </select>
+                <h4>City:</h4>
+                <input type="text" placeholder="City">
+                <h4>Education:</h4>
+                <input type="text" placeholder="Education">
+                <h4>Occupation:</h4>
+                <input type="text" placeholder="Occupation">
+                
+                <div class="btn-flex">
+                    <button>
+                        <i class="ri-search-line"></i>
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="sec-1">
+            <div id="forms-div">
+                <div id="links">
+                    <div class="link">
+                        <a href="#" class="link-hover" id="account-setting" onclick="showDiv()">Account Settings</a>
+                    </div>
+                    <div class="link">
+                        <a href="#" class="link-hover" id="privacy" onclick="showDiv1()">Privacy Options</a>
+                    </div>
+                    <div class="link">
+                        <a href="#" class="link-hover" id="hide-details" onclick="showDiv2()">Hide/Delete Account</a>
+                    </div>
+                    <div class="link">
+                        <a href="contact.html" class="link-hover" id="help">Help</a>
+                    </div>
+                    <div class="link">
+                        <a href="#" class="link-hover" id="logout">Logout</a>
+                    </div>
+                </div>
+                <div class="forms" id="form-1">
+                    <div id="heading">
+                        <h4>E-mail:</h4>
+                        <h5>Edit</h5>
+                    </div>
+                    <input type="email" placeholder="xyz@gmail.com">
+                    <div id="heading">
+                        <h4>Password:</h4>
+                    </div>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="forms" id="form-2">
+                    <div class="form-2-upper">
+                        <div class="lft">
+                            <div class="lft-elems">
+                                <input type="radio">
+                                <h4>Hide for all</h4>
+                            </div>
+                            <div class="lft-elems">
+                                <input type="radio">
+                                <h4>Visible only to paid members</h4>
+                            </div>
+                            <div class="lft-elems">
+                                <input type="radio">
+                                <h4>Visible to all</h4>
+                            </div>
+                        </div>
+                        <div class="rgt">
+                            <div class="rgt-img">
+                                <img src="./imgs/profile-photo.jpg" alt="profile-photo">
+                            </div>
+                            <div class="rgt-button">
+                                <p>Edit photo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-2-down">
+                        <div class="form-2-heading">
+                            <h4>Annnual Income:</h4>
+                        </div>
+                        <input type="number" placeholder="Visible to all members" class="form-2-down-input">
+                        <div class="form-2-heading">
+                            <h4>Date of Birth:</h4>
+                        </div>
+                        <input type="text" placeholder="Show my full date of birth (dd/mm/yyyy)" class="form-2-down-input">
+                    </div>
+                </div>
+                <div class="forms" id="form-3">
+                    <div id="heading">
+                        <h4>E-mail:</h4>
+                    </div>
+                    <input type="email" placeholder="xyz@gmail.com">
+                    <div id="heading">
+                        <h4>Password:</h4>
+                    </div>
+                    <input type="password" placeholder="Password">
+                    <div class="radio-buttons">
+                        <p class="radio-p"><input type="radio"><span class="radio-text">Temporary delete</span></p>
+                        <p class="radio-p"><input type="radio"><span class="radio-text">Delete Account</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logo-img">
+            <img src="./Images/shehnayilogowhite.svg" alt="Shehnayi-logo" title="Shehnayi">
+        </div>
+        <div class="footer-links">
+            <div class="foot-links-div">
+                <h4 class="links-title">Need Help?</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Partner Search</a></li>
+                    <li><a href="faq.html">How to use</a></li>
+                    <li><a href="membership-plan.html">Premium membership</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Company</h4>
+                <ul class="foot-links">
+                    <li><a href="aboutUs.html">About US</a></li>
+                    <li><a href="./blogs.html">Shaadi Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Privacy & You</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Be Safe Online</a></li>
+                    <li><a href="#">Reports Misuse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <h4 class="social-title">
+                Follow Us
+            </h4>
+            <div class="social-icons">
+                <a href="#" class="social-icons-link"><img src="./Icons/footer-fb-icon.svg" alt=""></a>
+                <a href="#" class="social-icons-link"><img src="./Icons/footer-twitter-icon.svg" alt=""></a>
+                <a href="#" class="social-icons-link"><img src="./Icons/footer-insta-icon.svg" alt=""></a>
+                <a href="#" class="social-icons-link"><img src="./Icons/footer-linkedin-icon.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <h4 class="terms-condtns">Terms and Conditions</h4>
+            <h4 class="privacy-policy">Privacy Policy</h4>
+            <h4 class="contact-us">Contact Us</h4>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./settings.js"></script>
+    <script src="./my_matches.js"></script>
+    <script src="./aboutUs.js"></script>
+
+</body>
+</html>
